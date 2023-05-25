@@ -11,7 +11,7 @@ body{
 }
 header{
     width: 100%;
-    height: 80px;
+    height: 70px;
     background: rgba(0,0,0,0.5);
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@ header .logo{
     width: 50%;
 }
 header .logo img{
-    width: 80px;
+    width: 60px;
 }
 header .menu ul{
     display: flex;
@@ -87,24 +87,23 @@ header .button-mobile{
 #home .container .title h1{
     color: #fff;
     text-transform: uppercase;
-    font-size: 8rem;
+    font-size: 6.5rem;
     letter-spacing: 5px;
 }
 #home .container .title h2{
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 40px;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-left: 30px;
 }
 #home .container .title h3{
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.2rem;
-    letter-spacing: 20px;
+    font-size: 1rem;
+    letter-spacing: 10px;
     margin-top: 30px;
     margin-left: 35px;
-
 }
 /*===== about =====*/
 
@@ -129,30 +128,39 @@ header .button-mobile{
 #about .container .title h1{
     color: #fff;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: left;
+    margin-top: 10px;
 }
 #about .container .title p{
     color: #fff;
-    width: 500px;
-    margin-top: 30px;
+    width: 400px;
+    margin-top: 10px;
+    font-size: 0.9rem;
 }
 #about .container .box-title{
     width: 420px;
-    height: 37vh;
-    margin-top: 20px;
+    height: 39vh;
+    margin-top: 5px;
     padding: 0 10px;
     box-shadow: 0 0 10px 0 rgba(21,111,195,0.5);
     border-radius: 20px;
 }
 #about .container .box-title span{
     color: #fff;
+    font-size: 0.9rem;
+}
+#about .container .box-title p{
+    color: #fff;
+    width: 200px;
+    margin-top: 5px;
+    font-size: 0.8rem;
 }
 #about .container .box-title .b1{
     width: 400px;
     height: 8px;
     background: #fff;
-    margin-top: 2px;
+    margin-top: 1px;
     border-radius: 5px;
 }
 #about .container .box-title .b2{
@@ -200,7 +208,7 @@ header .button-mobile{
     height: 80%;
     left: 0;
     right: 0;
-    margin: 150px auto;
+    margin: 100px auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -218,7 +226,7 @@ header .button-mobile{
     position: absolute;
     z-index: 9;
     color: #fff;
-    font-size: 6rem;
+    font-size: 5.5rem;
     margin-top: 60px;
 }
 #port .container .card p{
@@ -232,14 +240,13 @@ header .button-mobile{
 #port .container .card button{
     position: absolute;
     z-index: 9;
-    margin-top: 400px;
+    margin-top: 300px;
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
     background: rgba(21,111,195,0.5);
     cursor: pointer;
 }
-
 #port .container .card a{
     color: #fff;
     text-transform: uppercase;
@@ -282,9 +289,9 @@ header .button-mobile{
 }
 #contact .container .content-contact{
     width: 80%;
-    height: 60vh;
+    height: 50vh;
     margin: 0 auto;
-    padding: 200px 0;
+    padding: 100px 0;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -296,7 +303,7 @@ header .button-mobile{
     color: #fff;
 }
 #contact .content-contact .contact-left h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 #contact .content-contact .linha{
@@ -307,43 +314,110 @@ header .button-mobile{
     margin-bottom: 10px;
 }
 #contact .content-contact .contact-left ion-icon{
-    font-size: 2rem;
-    padding: 20px 0;
+    font-size: 1.5rem;
+    padding: 10px 0;
 }
 #contact .content-contact .contact-left span{
-    font-size: 1.2rem;
-    padding: 5px 0;
+    font-size: 1rem;
+    padding: 1px 0;
 }
 #contact .content-contact .contact-right{
     width: 50%;
+}
+#contact .content-contact .contact-right form{
+    color: #fff;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    color: #fff;
 }
 #contact .content-contact .contact-right h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 #contact .content-contact .contact-right input[type=email],
 #contact .content-contact .contact-right input[type=text]{
-    border-radius: 20px;
-    border: none;
-    padding: 15px 20px;
+    border: 0;
+    padding: 10px 15px;
     margin-bottom: 20px;
     font-size: 1.2rem;
     font-weight: 600;
     outline: none;
+    transition: all 0.5s;
+}
+#contact .content-contact .contact-right input[type=email]:focus,
+#contact .content-contact .contact-right input[type=text]:focus{
+    border-radius: 20px;
 }
 #contact .content-contact .contact-right textarea{
     width: 100%;
-    height: 120px;
-    border-radius: 20px;
-    border: none;
+    height: 100px;
+    border: 0;
     margin-bottom: 20px;
     font-size: 1.2rem;
     font-weight: 600;
     outline: none;
     padding: 15px 20px;
+    transition: all 0.5s;
+}
+#contact .content-contact .contact-right textarea:focus{
+    border-radius: 20px;
+}
+#contact .content-contact .contact-right button{
+    position: absolute;
+    margin-top: 300px;
+    padding: 10px 45px;    
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: all 0.5s;
+}
+#contact .content-contact .contact-right button:hover{
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    background: #ffffffd3;
+}
+#contact .content-contact .contact-right button:active{
+    transform: scale(0.5);
+}
+/*===== Thanks page =====*/
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #101026;
+    flex-direction: column;
+}
+.main img{
+    width: 60px;
+}
+.text{
+    font-size: 45px;
+    color: #9f07c5;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    color: #9f07c5;
+    margin-bottom: 50px;
+}
+.btn{
+    padding: 15px 55px;
+    background: #9f07c5;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.btn:hover{
+    border-radius: 20px;
+}
+.btn:active{
+    transform: scale(0.5);
 }
 /*===== Footer =====*/
 footer{
@@ -360,17 +434,120 @@ footer{
 /*===== Resposive =====*/
 
 @media screen and (max-width: 1280px){
+    header .logo img{
+        width: 40px;
+    }
+    #home .container .title h1{
+        font-size: 4rem;
+        letter-spacing: 4px;
+    }
+    #home .container .title h2{
+        letter-spacing: 20px;
+        font-size: 2rem;
+    }
+    #home .container .title h3{
+        font-size: 0.9rem;
+        letter-spacing: 5px;
+    }
     #home .container .icons ion-icon{
         font-size: 1.5rem;
     }
-    #port .container .card h1{
-        font-size: 4rem;
+    #about .container .title h1{
+        margin-top: 10px;
+        font-size: 1.2rem;
     }
-    #port .container .card p{
-        width: 280px;
+    #about .container .title p{
+        width: 300px;
+        margin-top: 10px;
         font-size: 0.8rem;
     }
+    #about .container .box-title{
+        width: 350px;
+        height: 40vh;
+        margin-top: 20px;
+        padding: 0 10px;
+        border-radius: 20px;
+    }
+    #about .container .box-title span{
+        font-size: 0.7rem;
+    }
+    #about .container .box-title .b1{
+        width: 300px;
+        height: 5px;
+    }
+    #about .container .box-title .b2{
+        width: 190px;
+        height: 5px;
+    }
+    #about .container .box-title .b3{
+        width: 210px;
+        height: 5px;
+    }
+    #about .container .box-title .b4{
+        width: 170px;
+        height: 5px;
+    }
+    #about .container .box-title .b5{
+        width: 150px;
+        height: 5px;
+    }
+    #port .container .card{
+        width: 40%;
+        height: 70%;
+    }
+    #port .container .card h1{
+        font-size: 2rem;
+    }
+    #port .container .card p{
+        margin-top: 200px;
+        width: 100px;
+        font-size: 0.8rem;
+    }
+    #port .container .card button{
+        margin-top: 280px;
+        padding: 10px 20px;
+    }
+    #contact .content-contact .contact-left h1{
+        font-size: 1rem;
+    }
+    #contact .content-contact .contact-left ion-icon{
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+    #contact .content-contact .contact-left span{
+        font-size: 0.9rem;
+    }
+    #contact .content-contact .contact-right h1{
+        font-size: 1rem;
+    }
+    #contact .content-contact .contact-right input[type=email],
+    #contact .content-contact .contact-right input[type=text]{
+        font-size: 0.8rem;
+        font-weight: 250;
+        height: 40px; 
+    }
+    #contact .content-contact .contact-right textarea{
+        height: 50px;
+        font-size: 0.9rem;
+        font-weight: 250;
+    }    
+    #contact .content-contact .contact-right button{
+        margin-top: 230px;
+        padding: 10px 20px;
+        font-weight: 100;
+        height: 40px;
+    }
+    #contact .content-contact .linha{
+        width: 200px;
+        height: 1.5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }    
+    footer{
+        display: none;
+    }
 }
+
 @media screen and (max-width: 960px){
     header{
         background: none;
@@ -437,6 +614,10 @@ footer{
     #about .container .title{
         align-items: center;
     }
+    #about .container .title p{
+        width: 600px;
+        text-align: justify;
+    }
     #about .container .box-title{
         width: 100%;
         height: 40vh;
@@ -445,55 +626,51 @@ footer{
         width: 100%;
     }
     #about .container .box-title .b2{
-        width: 90%;
+        width: 60%;
     }
     #about .container .box-title .b3{
-        width: 80%;
+        width: 70%;
     }
     #about .container .box-title .b4{
-        width: 87%;
+        width: 55%;
     }
     #about .container .box-title .b5{
-        width: 76%;
+        width: 50%;
     }
-    #contact .container .content-contact{
+     #contact .container .content-contact{
         width: 100%;
         height: 100vh;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-    #contact .content-contact .contact-left h1{
-        font-size: 1.5rem;
-    }
-    #contact .content-contact .contact-left ion-icon{
-        font-size: 1.5rem;
-        padding: 5px 0;
-    }
-    #contact .content-contact .contact-left span{
-        font-size: 1rem;
-        padding: 5px 0;
-    }
     #contact .content-contact .contact-right h1{
-        font-size: 1.5rem;
-        margin-top: 80px;
-    }
-    #contact .content-contact .contact-right input[type=email],
-    #contact .content-contact .contact-right input[type=text]{
-        padding: 10px 15px;
-        font-size: 1rem;
+        margin-top: 45px;
     }
     #contact .content-contact .contact-right textarea{
         padding: 10px 15px;
+        width: 70%;
         font-size: 1rem;
-    }
+    } 
+
+    #contact .content-contact .contact-right button{
+        margin-top: 210px;
+        margin-left: 350px;
+        padding: 10px 25px;
+        font-weight: 100;
+        height: 40px;
+    }  
 }
+
 @media screen and (max-width: 750px){
     header{
         padding: 10px;
     }
+    #home .container .title h1{
+        font-size: 3.5rem;
+    }
     #home .container .title h2{
-        letter-spacing: 30px;
+        letter-spacing: 10px;
     }
     #home .container .title h3{
         letter-spacing: 10px;
@@ -503,13 +680,19 @@ footer{
     }
     #about .container .title p{
         width: 100%;
-        margin-top: 30px;
+        margin-top: 10px;
     }
     #port .container .card{
         width: 60%;
         height: 60%;
     }
     #port .container .card h1{
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
+
+    #contact .content-contact .contact-right button{
+        margin-top: 210px;
+        margin-left: 220px;
+    }  
+      
 }
