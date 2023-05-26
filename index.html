@@ -51,12 +51,14 @@
 
     <section id="about">
         <div class="container">
+            <div class="content-contact">
             <div class="title">
                 <h1>Who is Jhully?</h1>
                 <p>I am a student in the fifth and final semester of the Systems Analysis and Development course at CDL College. I am very communicative, ethical, creative, flexible and able to learn from new challenges. I went through two internships, one in the support area, where I didn't have so much contact with software development, but only with users; and on the second I was able to do a full stack training, and after the training I was able to observe the routine of IT professionals while they solve the demands. In my current job, I gained junior level experience in full stack web programming, where I use technologies such as Java, HTML and CSS, TypeScript, Angular and Ionic.</p>
-
-                <h1>Skills:</h1>
-                <div class="box-title">
+            </div>
+            
+            <div class="box-title">
+                    <h1 class="title-box">Skills:</h1>
                     <p>60%</p>
                     <div class="b1"><div class="b2"></div></div>
                     <span>HTML AND CSS</span>
@@ -73,7 +75,8 @@
                     <div class="b1"><div class="b5"></div></div>
                     <span>TYPESCRIPT</span>
                 </div>
-            </div>
+            
+        </div>
         </div>
     </section>
 
@@ -131,7 +134,8 @@
                     <span>Fortaleza, Ceara - Brazil</span>
                 </div>
                 <div class="contact-right">
-                    <form action="https://api.staticforms.xyz/submit" method="post">
+                    <!-- <form action="https://api.staticforms.xyz/submit" method="post"> -->
+                    <form action="https://formsubmit.co/ajax/jhullyeaires@hotmail.com" method="POST" data-form>
                         <h1>Fill the form</h1>                    
                         <div class="linha"></div>
 
@@ -139,12 +143,12 @@
 
                         <input type="email" name="email" placeholder="E-mail" required>                        
                         
-                        <textarea placeholder="Message" name="message" required></textarea>
+                        <textarea name="message" placeholder="Message" required></textarea>
 
-                        <button type="submit">Enviar</button>
+                        <button type="submit" data-button>Send</button>
 
-                        <input type="hidden" name="accessKey" value="18c2c515-bbf8-42bd-a856-2f9692c80dc9">
-                        <input type="hidden" name="redirectTo" value="thanks.html">
+                        <script src="./app.js"></script>
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
             </div>
